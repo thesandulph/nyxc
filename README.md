@@ -1,5 +1,12 @@
-# **Your Fully Autonomous AI [Research Agent]**
-## **Website**
+# Doc
+considering the task details, i added an item into the sidebar, by clicking this item you'll navigate to new route that includes a convert currencies form,
+on the backend side i implemented [BASE_URL/exchange endpoint, i has 4 APIs:
+##### GET: /currency => for getting list of supported currencies (it fetchs currencies from ExchangeRate-API)
+##### POST: /convert => for convert currencies (by ExchangeRate-API)
+##### bonus API GET: /convert => for get user history list of conversion
+##### bonus API GET: /convert/:id => for get a user history item by id
+
+as you see in the video, in this form you can set the amount and select your currencies from the list, the you can submit the form and see the result of conversion, it fetchs convertedAmount and conversionRate, after submitting the form, the form values inserts into localStorage and you can see the history of conversion at the bottom of the page, by implementing above bonus APIs, you can ignore localStorage and get conversion history of user from the backend
 
   https://nyxcipher.ai/
 
